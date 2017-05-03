@@ -1,0 +1,140 @@
+issue kya hai
+
+kal jaise insert update or delete ho raha tha aaj waisa nhi hora
+
+ok
+
+univercity table mei ?
+
+sab me
+
+error kya hai ?
+
+error ka toh pta nhi
+
+update ka check kar
+
+id kidhar gaya table mei ?n
+nhi hain kya?
+
+abh type kar ;
+
+kal bhi aisa hi tha i guess
+6 fields thhe ... id bhi tha 
+
+toh bdaya toh theek ho jaega kya?
+haan id wala field chaiye
+
+ruk 2 min
+?
+cool
+ 
+baki me bhi same kya??
+id gayab kaise hogaya
+kya pta
+baki sab mei bhi id dena 
+dalta hoon
+baki code me kuch nhi kru na??
+na .. aur iss point se backup banalena 
+haan
+
+][ODBC Microsoft Access Driver] Too few parameters. Expected 6.
+
+utne fields nahi hai 
+ 5 hi toh hain
+code mei tu 6 dal raha 
+6 field nahi hai tho error mar raha
+acha ruk check karta 
+now lets check
+cool ho gaya
+ssahiutta piyega??
+sutta pi.y. epiala
+pila
+=====?kal kab aara?
+dopher ya shaam ko
+cool
+chal abhi chal ta byeyes bye
+
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+
+search ke liye kaisa form design kru?
+jo bnaya hain wo chalega kya?
+chalega
+
+ab isko tables se kaise connect karneka?
+utha na phone
+ruk mei karta
+ye wala form kha hai?
+ye le
+ye course seliya na?
+haan
+eek min ruk
+hogaya
+
+email and phone no ka validation?
+signup me
+phone number should be 10 digits aur email validation net mei miljayega 
+
+bohot aata na meko");P
+
+10 digit validation easy hai ... email wala tho net se dekhna pdhegay baas
+kar dena phir phone ka
+email ka main dhoondta
+ok
+
+
+phone toh hain hi nhi
+dateofbirth ka bhi hona chahiye na??
+sirf text box se mushkill hai
+field hata de 
+dob??
+haanus
+ke jga phone daal deta
+chalega 
+dob ki aur kahi jarurat hai ?
+nhi tho nikal de fir 
+... btauad
+likh
+dob hta ke uske jga phone daal dete
+coddae alkar de main baad me change karta
+ok
+hogaya 
+cool kuch aur lga toh call karta hhoonn
+ok abhi sone ja raha hu bye /
+.bye
+
+
+samjha na kya karna hain??
+
+
+haan  ye bata level of stream wale ka kya karna haini
+
+nikal dega
+ok
+
+kidhar  kidhar se search kar na hai utna radio button dal de aur unka naam likha de
+
+teen hi
+ruk naam change karta
+
+done 
+baki lga toh main daal dunga baadme
+
+mekoo switch case ka format nhi pta
+
+black mei hai kya 
+
+white karta ruk
+
+hogaya
+
+splash screen ka idea hain kya teko?
+maine try iya byt kuch hua nhi start me sirf 3 sec ka puase tela but kuck show nhi krra
+
+show kiya karna hai.\
+
+splash . java ka kuch kaam nhi hain.
+
+karta kuch ruk

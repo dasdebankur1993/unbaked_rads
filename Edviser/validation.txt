@@ -1,0 +1,94 @@
+ private void username_txtActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    //copied from net
+    public boolean isNumeric(String s) {  
+    return s.matches("[-+]?\\d*\\.?\\d+");  
+    }  
+    
+    public class EmailValidator {
+
+    private Pattern pattern;
+    private Matcher matcher;
+
+    private static final String EMAIL_PATTERN = 
+        "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+        + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
+    public EmailValidator() {
+        pattern = Pattern.compile(EMAIL_PATTERN);
+    }
+
+    public boolean validate(final String hex) {
+
+        matcher = pattern.matcher(hex);
+        return matcher.matches();
+
+    }
+    
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        EmailValidator emailValidator=new EmailValidator();
+        if(!emailValidator.validate(emailid_txt.getText().trim())){
+            JOptionPane.showMessageDialog(null, "Invalid ID or Field is Empty!!", "InfoBox: ", JOptionPane.INFORMATION_MESSAGE);                                    
+           
+        
+        }
+        
+        
+        String phoneNumber = phone_txt.getText();
+        
+        if(phoneNumber.length()!=10||!isNumeric(phoneNumber)){
+        
+             JOptionPane.showMessageDialog(null, "Phone number should be a 10 digit number and numeric", "InfoBox: ", JOptionPane.INFORMATION_MESSAGE);                                    
+                           
+        }else{
+     
+            try{
+               Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+               Connection cn = DriverManager.getConnection("jdbc:odbc:edviser");
+        
+               
+               Statement st1 = cn.createStatement();
+               ResultSet rest=st1.executeQuery("select username,password from user where username='"+username_txt.getText()+"';");
+               
+               if(rest.next()){
+               
+                JOptionPane.showMessageDialog(null, "User already registered", "InfoBox: ", JOptionPane.INFORMATION_MESSAGE);                                    
+                   
+                   cn.close();
+                   st1.close();
+                   rest.close();
+                   return;     
+               }
+              
+               st1.close();
+               PreparedStatement p1 = cn.prepareStatement("insert into user(student_name,username,password,emailid,date_of_birth,address,last_education_completed,score) values(?,?,?,?,?,?,?,?)");
+               
+               p1.clearParameters();
+               p1.setString(1,student_name_txt.getText());
+               p1.setString(2,username_txt.getText());
+               p1.setString(3,password_txt.getText());
+               p1.setString(4,emailid_txt.getText());
+               p1.setString(5,phone_txt.getText());
+               p1.setString(6,address_txt.getText());
+               p1.setString(7,lasteducation_txt.getText());
+               p1.setString(8,score_txt.getText());
+               p1.executeUpdate();
+               
+               p1.close();           
+               cn.close();
+                
+                JOptionPane.showMessageDialog(null, "Signup Succesfull!!", "InfoBox: ", JOptionPane.INFORMATION_MESSAGE);
+                this.hide();
+                JFrame Login=new Login();
+                Login.show();
+               
+               
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+            
+        }
+        
+    }                                        
